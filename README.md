@@ -4,4 +4,4 @@
 
 ##### Testing the demo
 
-Clone the project, import the project in Xcode and in View ViewController add an API Key
+Clone the project, import the project in Xcode and in View ViewController add an API Key and Secret Key.
