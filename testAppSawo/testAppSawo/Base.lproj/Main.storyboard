@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17504.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="testAppSawo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ir4-ZV-Z4t">
+                                <rect key="frame" x="145" y="421" width="124" height="55"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="29"/>
+                                <state key="normal" title="LOGIN">
+                                    <color key="titleColor" red="0.22359001640000001" green="0.2313290536" blue="0.26783573630000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="Login:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eAh-WQ-ofX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.99907690289999995" green="0.98881036040000003" blue="0.43937903639999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="ir4-ZV-Z4t" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="8hi-8G-hP1"/>
+                            <constraint firstItem="ir4-ZV-Z4t" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="377" id="W6F-Dv-jxa"/>
+                            <constraint firstItem="ir4-ZV-Z4t" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="145" id="r5J-YH-EEa"/>
+                            <constraint firstItem="ir4-ZV-Z4t" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="snH-Qp-nZP"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <segue destination="VuT-Yh-9qz" kind="presentation" identifier="Sawo" modalPresentationStyle="fullScreen" id="IFX-Ug-9sJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-384" y="123"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="XOe-cd-O9p">
+            <objects>
+                <viewController id="VuT-Yh-9qz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="HJ2-Le-vas">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome to SAWO" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cdg-u8-J0P">
+                                <rect key="frame" x="112" y="436" width="190" height="24"/>
+                                <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ni9-m9-oXw"/>
+                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                        <constraints>
+                            <constraint firstItem="Cdg-u8-J0P" firstAttribute="centerY" secondItem="HJ2-Le-vas" secondAttribute="centerY" id="a0e-mI-WNQ"/>
+                            <constraint firstItem="Cdg-u8-J0P" firstAttribute="centerX" secondItem="HJ2-Le-vas" secondAttribute="centerX" id="mUn-HC-zs1"/>
+                            <constraint firstItem="Cdg-u8-J0P" firstAttribute="leading" secondItem="ni9-m9-oXw" secondAttribute="leading" constant="112" id="o4N-4t-izN"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vlI-Jd-QhA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="440.57971014492756" y="122.54464285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

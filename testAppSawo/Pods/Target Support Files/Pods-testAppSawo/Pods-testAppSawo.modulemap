@@ -1,0 +1,6 @@
+framework module Pods_testAppSawo {
+  umbrella header "Pods-testAppSawo-umbrella.h"
+
+  export *
+  module * { export * }
+}
